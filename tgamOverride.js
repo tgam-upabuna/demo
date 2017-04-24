@@ -22,7 +22,7 @@ PoWaSettings.promo = {
     <div class="c-video__button c-video__button--play powa-shot-image powa-shot-click powa-shot-touch powa-shot-touch-background">
       <button class="c-button c-button--dark c-button--video powa-shot-click powa-shot-click-play" aria-label="Play Video">
         <svg class="c-button__icon" role="img" pointer-events="none" focusable="false" aria-hidden="true" role="presentation" pointer-events="none">
-          <use xlink:href="/ux-pattern-library/assets/patterns/images/sprite.svg#icon-play"></use>
+          <use xlink:href="/pb/resources/assets/img/tgam-patterns/sprite.svg?token=776659#icon-play"></use>
         </svg>
         <div>
           <span class="c-button--video__label">Play Video</span>
