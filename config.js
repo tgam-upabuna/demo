@@ -1,10 +1,4 @@
-window.adv = window.adv || {};
-let mobile = /(android|iPad|iPhone|iPod)/g.test(navigator.platform) ? '_mweb' : '';
-let iu = mobile ? '/58/mob.tgam.mobi/video/article' : '/58/test.theglobeandmail.com/video/article';
-window.adv.gpt_goldfish = window.adv.gpt_goldfish;
-
 PoWaSettings.promo = {
-  size: 'medium',
   style: "",
   template: function (data) {
     function getTime (videoData) {
