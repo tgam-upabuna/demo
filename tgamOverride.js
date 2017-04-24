@@ -1,5 +1,6 @@
 PoWaSettings.promo = {
-  style: "",
+  size: "medium",
+  style: {},
   template: function (data) {
     function getTime (videoData) {
       if (!videoData.duration) return '';
