@@ -32,7 +32,7 @@ PoWaSettings.promo = {
      powa-shot-touch-background
      */
     let template = `
-    <div class="c-video--image powa-shot-image powa-shot-click-play" style="background-image: url('${ getImage(data.videoData) }')">
+    <div class="c-video--image powa-shot-image powa-shot-click" style="background-image: url('${ getImage(data.videoData) }')">
       <div class="c-video__button c-video__button--play">
         <button class="c-button c-button--dark c-button--video" aria-label="Play Video">
           <svg class="c-button__icon" role="img" pointer-events="none" focusable="false" aria-hidden="true" role="presentation" pointer-events="none">
