@@ -3,12 +3,12 @@ PoWaSettings.promo = {
   style: {},
   template: function (data) {
     function getImage (videoData) {
-			let resized = videoData.additional_properties.imageResizerUrls.find(image => image && image.size && image.size === PoWaSettings.promo.size)
+      let resized = videoData.additional_properties.imageResizerUrls.find(image => image && image.size && image.size === PoWaSettings.promo.size)
 
-			return videoData.contentConfig.type === 'live' ? videoData.promoImage.image :
-				resized && resized.url ? resized.url :
-				videoData.promo_image.url;
-		}
+      return videoData.contentConfig.type === 'live' ? videoData.promoImage.image :
+      resized && resized.url ? resized.url :
+      videoData.promo_image.url;
+    }
 
     function getTime (videoData) {
       if (!videoData.duration) return '';
@@ -27,21 +27,21 @@ PoWaSettings.promo = {
     }
 
     /*
-     powa-shot-image
-     powa-shot-touch
-     powa-shot-touch-background
-     */
+    powa-shot-image
+    powa-shot-touch
+    powa-shot-touch-background
+    */
     let template = `
     <div class="c-video--image powa-shot-image powa-shot-click powa-shot-click-play" style="background-image: url('${ getImage(data.videoData) }')">
       <div class="c-video__button c-video__button--play">
-        <button class="c-button c-button--dark c-button--video" aria-label="Play Video">
-          <svg class="c-button__icon" role="img" pointer-events="none" focusable="false" aria-hidden="true" role="presentation" pointer-events="none">
-            <use xlink:href="/pb/resources/assets/img/tgam-patterns/sprite.svg?token=776659#icon-play"></use>
-          </svg>
-          <div>
-            <span class="c-button--video__label">Play Video</span>
-            <span class="c-button--video__time">${ getTime(data.videoData) }</span>
-          </div>
+        <button class="c-button c-button--dark-secondary c-button--badge c-button--no-border" aria-label="Play Video">
+            <svg class="c-button__icon" role="img" pointer-events="none" focusable="false" aria-hidden="true">
+              <use xlink:href="/pb/resources/assets/img/tgam-patterns/sprite.svg?token=20170707#icon-play"></use>
+            </svg>
+            <span class="c-button__text">
+              <span class="c-button__primary-text">Play Video</span>
+              <span class="c-button__secondary-text">${ getTime(data.videoData) }</span>
+            </span>
         </button>
       </div>
     </div>`;
